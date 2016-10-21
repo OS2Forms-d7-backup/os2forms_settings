@@ -1,0 +1,11 @@
+name = OS2Forms settings
+description = various settings that need to be present for OS2Forms exported modules to work correctrly
+core = 7.x
+package = OS2Forms
+version = 7.x-1.0
+project = os2forms_settings
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = node_export_existing

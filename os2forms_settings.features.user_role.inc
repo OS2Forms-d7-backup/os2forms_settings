@@ -13,7 +13,7 @@ function os2forms_settings_user_default_roles() {
   // Exported role: os2forms.
   $roles['os2forms'] = array(
     'name' => 'os2forms',
-    'weight' => '2',
+    'weight' => 4,
   );
 
   return $roles;

@@ -28,7 +28,6 @@ features[variable][] = nemid_login_certificateandkey_live
 features[variable][] = nemid_login_certificateandkey_test
 features[variable][] = nemid_login_form_help
 features[variable][] = nemid_login_mode
-features[variable][] = nemid_login_private_key_live
 features[variable][] = nemid_login_private_key_password_test
 features[variable][] = nemid_login_private_key_test
 features[variable][] = nemid_login_serviceid_live

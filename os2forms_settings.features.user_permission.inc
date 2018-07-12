@@ -14,10 +14,11 @@ function os2forms_settings_user_default_permissions() {
   $permissions['access all webform results'] = array(
     'name' => 'access all webform results',
     'roles' => array(
+      'Fagspecialist' => 'Fagspecialist',
       'Sektionsredaktør' => 'Sektionsredaktør',
       'Site-redaktør' => 'Site-redaktør',
       'Webmaster' => 'Webmaster',
-      'authenticated user' => 'authenticated user',
+      'os2forms' => 'os2forms',
     ),
     'module' => 'webform',
   );
@@ -28,6 +29,7 @@ function os2forms_settings_user_default_permissions() {
     'roles' => array(
       'Site-redaktør' => 'Site-redaktør',
       'Webmaster' => 'Webmaster',
+      'authenticated user' => 'authenticated user',
       'os2forms' => 'os2forms',
     ),
     'module' => 'webform',

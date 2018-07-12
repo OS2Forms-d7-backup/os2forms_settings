@@ -87,13 +87,13 @@ tvw7spmc45CIaIU/pT4WF5sjrK4RoEX05sFDJrDMGYRDhc0q1LdnPPrpPEsr2zbE
   $strongarm->value = array(
     'value' => '<p><strong>Hvorfor skal jeg logge på med NemID?</strong></p>
 
-<p>Du skal logge på med dit NemID for din egen sikkerheds skyld, så det kun er dig, der kan skrive dig op til bolig</p>
+<p>Du skal logge på med dit NemID for din egen sikkerheds skyld, så det kun er dig, der kan udfylde denne blanket.</p>
 
 <p><strong>Jeg har ikke NemID</strong></p>
 
-<p>Du kan bestille et NemID på&nbsp;<a href="http://www.nemid.nu/">www.NemId.nu</a>, hvis du har et gyldigt pas eller kørekort. Hvis du ikke har et gyldigt pas eller kørekort, skal du bestille tid i Borgerservice her (link kommer) eller ringe på telefon 4477 1800</p>
+<p>Du kan bestille et NemID på&nbsp;<a href="http://www.nemid.nu/">www.NemId.nu</a>, hvis du har et gyldigt pas eller kørekort. Hvis du ikke har et gyldigt pas eller kørekort, skal du bestille tid i Borgerservice hos din kommune.</p>
 
-<p>Hvis du ikke er interesseret i at få NemID kan du få hjælp til at udfylde ansøgningsskemaet i Borgerservice. Du skal bestille tid på telefon 4477 1800</p>
+<p>Hvis du ikke er interesseret i at få NemID kan du få hjælp til at udfylde blanketten i Borgerservice - Ballerup kommune. Du kan bestille tid på telefon 4477 2000</p>
 ',
     'format' => 'filtered_html',
   );
@@ -105,40 +105,6 @@ tvw7spmc45CIaIU/pT4WF5sjrK4RoEX05sFDJrDMGYRDhc0q1LdnPPrpPEsr2zbE
   $strongarm->name = 'nemid_login_mode';
   $strongarm->value = 'live';
   $export['nemid_login_mode'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'nemid_login_private_key_live';
-  $strongarm->value = '-----BEGIN PRIVATE KEY-----
-MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCbHkdYGhfF8WGe
-spqiNvE9xHzPuMJwO/mpX2UgglkImj7oHhJtI0DWUT4POUg6EP0t5Ljmbn0VAX59
-kHrRJGD8xcQ8eVx/bCSkuGlxQoPpctg5UeBOmBuj2JEBBhmuGjSiYNZ9LQ+o9tr5
-gxG1HtKw09C7p40fU6hXUVgaftUJB548TvFCmqEkLVbwILjjP/hBQooKYPihBt0n
-VjwLURFyZZOQSE0k8ojgssEVxeCpQenP1d62dMb3k2W74xe7FPHmwk9LQMtsp4j1
-F3ADdWrt/QOp2D102Bi/rHRr4nDwk/RGAgz56f6EyC7/30oP1LGatYWW65ydVYzz
-k96wBe+hAgMBAAECggEAeTU9tmAdN3UYPLN/FUYtV4CTrpTGioCy42BBWxe/jnNI
-uIPXDiS/4zf0cFzoTUc9LoFM4fJwFtvmBSPCdG4iwyGd50tFtePA9l2LNw8smFw/
-DPsndQJyhqMRG2Wy51Je0osszv9I/1R1YwbB7W86XyYEMr4IDfSG1EQhvgJhYP20
-/t4rifHtxRbPJM/yNlBhA/f7IcQ6tL4m2PW1Prc4hy4DHou7OYEF702vVmjjDJUU
-HLSDQ4Pqp61nSJVhqmbanIjW78pX7f4TlVb6MyT+JolgbOfT02CQb5Xo712/56Hy
-OOUqLh0y3KjBAH8zV36w0TpHXzjRMvBUkAk3Z5twyQKBgQDS9MYsnI1mwafvA2Td
-4QTLxijfqIMLe1symrGDF+bnoqQz6Q3nhJ91nylCR7HU+jIDvApYE/jQmYMySFQj
-ETNqXRNwFr+SnSyyZN1CQDHZ1QLJpVJFgRq9skTLFkeGkXeVWrR7i77wc3gedVfd
-ClUlmCUFJn8jonvBmg3uGn856wKBgQC8PU93ohM6cyKN2WbybD9bNcJB0vAhZF/A
-yhvRdDUMJ8P2LljzwJjTDAJrI2umt1mPldYk3RjNBwzL/d46nvsCaCmSESfAM8za
-r30EnDSiG0oTg4b5hplaiB6F7Mg9hLRIJj6bCsVMyT0euNvj4oFBSPcZQwWKY0Cy
-XN0YdlFtowKBgFqBY4h+Pfgo+3iC10KOKLWYNa8HJ/nEGbNTRPc+SPV2BMa0pR9/
-+b3H5DaodbYvBUgu4604HFa6ldv7xgUpewqWFiHP0K8BOczrkzW6Puj7B3Alum9R
-XXynP/Z1f4hPXqO4P5iFswyMLau7ok+WAEPZy4AzLPbH3hqIkpNl0NGzAoGAK+t2
-LiiPqfSRHF2cKnXdNm/NmkQYKQJdYQMHCJC/i81/aGIZ+Q132s4ThmHmTSi8accB
-BurbTYMWlkXuYukTEdWx1VXRW4P6iQ+m8LttgGEzoGfwxymDgF8AGClN8ySSV78s
-nkoeDLNrYk6pZ3tCwzO+C5PaqBZOUw9dusZoa1cCgYEAieSkseypXCj9QiaT2Goe
-Udwm3J005koUabyNBlU0l+/+JHRS5jJyyGd6HNjCEiimMo73lCdUwc4u04utla/z
-4htNqeK4RizwYIUFM9s/oNZNbzLzK17ItQ7rfOSp8h70SvlH+8KBoD0h1giUsDfp
-tfKPssU9Wr0d917GZ/rsd/o=
------END PRIVATE KEY-----';
-  $export['nemid_login_private_key_live'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
